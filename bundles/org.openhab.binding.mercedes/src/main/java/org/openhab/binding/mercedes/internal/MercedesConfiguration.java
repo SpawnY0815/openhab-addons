@@ -19,7 +19,12 @@ package org.openhab.binding.mercedes.internal;
  */
 public class MercedesConfiguration {
 
-    public String clientId;
-    public String clientSecret;
-    public int refreshPeriod;
+    public String vin;
+    public String client_id;
+    public String client_secret;
+    public Boolean scope_fuelstatus;
+    public Boolean scope_evstatus;
+    public Boolean scope_vehiclelock;
+    public Boolean scope_vehiclestatus;
+    public Boolean scope_payasyoudrive;
 }

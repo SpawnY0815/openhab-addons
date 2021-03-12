@@ -4,29 +4,60 @@
 	xmlns:thing="https://openhab.org/schemas/thing-description/v1.0.0"
 	xsi:schemaLocation="https://openhab.org/schemas/thing-description/v1.0.0 https://openhab.org/schemas/thing-description-1.0.0.xsd">
 
-	<!-- Sample Thing Type -->
-	<thing-type id="sample">
-		<label>Mercedes Binding Thing</label>
-		<description>Sample thing for Mercedes Binding</description>
+	<thing-type id="vehicle">
+		<label>Mercedes Benz Vehicle</label>
+		<description>Vehicle Thing</description>
 
 		<channels>
-			<channel id="channel1" typeId="sample-channel"/>
+			<channel id="lastConnectionDateTime" typeId="lastConnectionDateTime-channel"/>
 		</channels>
 
 		<config-description>
-			<parameter name="config1" type="text" required="true">
-				<label>Sample Parameter</label>
-				<description>This is a sample text configuration parameter</description>
+			<parameter name="vin" type="text" required="true">
+				<label>Vehicle ID</label>
+				<description>This is your vehicle id</description>
+			</parameter>
+			<parameter name="client_id" type="text" required="true">
+				<label>Client ID</label>
+				<description>This is your MB project client id</description>
+			</parameter>
+			<parameter name="client_secret" type="text" required="true">
+				<label>Client Secret</label>
+				<description>This is your MB project client secret</description>
+			</parameter>
+			<parameter name="scope_fuelstatus" type="boolean" required="false">
+				<label>Fuelstatus API</label>
+				<description>Did you sub this API?</description>
+				<default>false</default>
+			</parameter>
+			<parameter name="scope_evstatus" type="boolean" required="false">
+				<label>evstatus API</label>
+				<description>Did you sub this API?</description>
+				<default>false</default>
+			</parameter>
+			<parameter name="scope_vehiclelock" type="boolean" required="false">
+				<label>vehiclelock API</label>
+				<description>Did you sub this API?</description>
+				<default>false</default>
+			</parameter>
+			<parameter name="scope_vehiclestatus" type="boolean" required="false">
+				<label>vehiclestatus API</label>
+				<description>Did you sub this API?</description>
+				<default>false</default>
+			</parameter>
+			<parameter name="scope_payasyoudrive" type="boolean" required="false">
+				<label>payasyoudrive API</label>
+				<description>Did you sub this API?</description>
+				<default>false</default>
 			</parameter>
 		</config-description>
 
 	</thing-type>
-
 	<!-- Sample Channel Type -->
-	<channel-type id="sample-channel">
+	<channel-type id="lastConnectionDateTime-channel">
 		<item-type>mercedesItem</item-type>
-		<label>Mercedes Binding Channel</label>
-		<description>Sample channel for Mercedes Binding</description>
+		<label>Mercedes Binding lastConnectionDateTime Channel</label>
+		<description>lastConnectionDateTime-channel</description>
 	</channel-type>
 
 </thing:thing-descriptions>

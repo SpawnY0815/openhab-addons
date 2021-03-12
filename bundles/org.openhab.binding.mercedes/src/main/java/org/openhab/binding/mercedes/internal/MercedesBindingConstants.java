@@ -68,16 +68,17 @@ public class MercedesBindingConstants {
     public static final String MERCEDES_ALIAS = "/connectmercedes";
 
     // Mercedes scopes needed by this binding to work.
-    public static final String MERCEDES_SCOPE_FUELSTATUS = "mb:vehicle:mbdata:fuelstatus";
-    public static final String MERCEDES_SCOPE_EVSTATUS = "mb:vehicle:mbdata:evstatus";
-    public static final String MERCEDES_SCOPE_VEHICLELOCK = "mb:vehicle:mbdata:vehiclelock";
-    public static final String MERCEDES_SCOPE_VEHICLESTATUS = "mb:vehicle:mbdata:vehiclestatus";
-    public static final String MERCEDES_SCOPE_PAYASYOUDRIVE = "mb:vehicle:mbdata:payasyoudrive";
+    public static final String MERCEDES_SCOPE_FUELSTATUS = "mb:vehicle:mbdata:fuelstatus ";
+    public static final String MERCEDES_SCOPE_EVSTATUS = "mb:vehicle:mbdata:evstatus ";
+    public static final String MERCEDES_SCOPE_VEHICLELOCK = "mb:vehicle:mbdata:vehiclelock ";
+    public static final String MERCEDES_SCOPE_VEHICLESTATUS = "mb:vehicle:mbdata:vehiclestatus ";
+    public static final String MERCEDES_SCOPE_PAYASYOUDRIVE = "mb:vehicle:mbdata:payasyoudrive ";
 
+    public static final String MERCEDES_SCOPE_REFRESHTOKEN = "offline_access";
     // List of Bridge configuration params
-    public static final String CONFIGURATION_CLIENT_ID = "clientId";
+    // public static final String CONFIGURATION_CLIENT_ID = "clientId";
 
     // List of Bridge/Thing properties
-    public static final String PROPERTY_MERCEDES_USER = "user";
-    public static final String PROPERTY_MERCEDES_DEVICE_NAME = "deviceName";
+    // public static final String PROPERTY_MERCEDES_USER = "user";
+    // public static final String PROPERTY_MERCEDES_DEVICE_NAME = "deviceName";
 }
